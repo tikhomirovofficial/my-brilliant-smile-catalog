@@ -1,0 +1,183 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Geometria, 'sans-serif';
+}
+
+/*h1, h2, h3, h4, h5, h6 {*/
+/*    font-family: Geometria-Bold, 'sans-serif';*/
+/*}*/
+h1, p {
+    color: #434343;
+}
+
+button {
+    cursor: pointer;
+
+}
+
+.btn {
+    font-family: Geometria-Medium, 'sans-serif';
+    background: #96A7CD;
+    border-bottom: 4px solid #405B95;
+    color: white;
+}
+
+.wrapper {
+    max-width: 116rem;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 1rem;
+}
+
+.main {
+    padding-top: 4rem;
+    background: url("../img/main_background.jpg") no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    padding-bottom: 287px;
+}
+
+.main__text {
+    margin: 37px 0;
+}
+
+.main__text-brand {
+    max-width: 60rem;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    font-size: 4rem;
+}
+
+.main__text-brand span {
+    color: #96A7CD;
+    font-family: Geometria-Bold, 'sans-serif';
+}
+
+.main__text-description {
+    max-width: 489px;
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+.main__btn {
+    font-size: 2rem;
+    padding: 16px 6rem;
+}
+
+.products {
+    padding-top: 10rem;
+    padding-bottom: 74px;
+}
+
+.products__title {
+    font-size: 36px;
+    font-family: Geometria-Bold, 'sans-serif';
+    margin-bottom: 4rem;
+    color: #96A7CD;
+}
+
+.products__row-item:last-of-type {
+    flex: 1;
+}
+
+.products__item {
+    max-width: 260px;
+    height: 100%;
+}
+
+.products__rows {
+    gap: 4rem;
+}
+
+.products__row {
+    width: 100%;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.products__item-img {
+    height: 26rem;
+    width: 26rem;
+
+}
+
+.products__item-description {
+    font-size: 16px;
+    line-height: 1.4;
+    min-height: 88px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.products__item-btn {
+    padding: 16px 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.products__btn {
+    padding: 16px 0;
+    width: 26rem;
+    margin: 6rem auto 0 auto;
+    font-size: 2rem;
+}
+
+footer {
+    padding: 5rem 0;
+    background: #96A7CD;;
+    color: white;
+}
+
+.footer__subtitle {
+    font-size: 2rem;
+    margin-bottom: 9px;
+    font-family: Geometria, 'sans-serif';
+}
+
+.footer__contacts, .footer__markets {
+    max-width: 26rem;
+}
+
+.footer__contacts-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__contacts-item p {
+    font-size: 16px;
+    color: white;
+}
+.modal {
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+}
+.modal__content {
+    padding: 25px;
+    background: white;
+    width: 760px;
+}
+.modal-opened {
+    display: flex!important;
+}
+.modal__title {
+    font-size: 32px;
+    line-height: 1.4;
+}
+.modal__block {
+    padding: 0 70px;
+}
+.modal__markets {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.modal__markets-column {
+    gap: 40px;
+}
+.modal__markets-column img {
+    height: 35px;
+}
