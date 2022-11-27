@@ -22,19 +22,19 @@
             <h1 class="modal__title">Заказать на</h1>
             <div class="modal__markets w-100p flex-row-betw">
                 <div class="modal__markets-column flex-column">
-                    <a href="">
+                    <a id="modal__wildberries" href="">
                         <img src="assets/img/wildberries.svg" alt="">
                     </a>
 
-                    <a href="">
+                    <a id="modal__sber" href="">
                         <img src="assets/img/sbermarket.svg" alt="">
                     </a>
                 </div>
                 <div class="modal__markets-column flex-column">
-                    <a href="">
+                    <a id="modal__ozon" href="">
                         <img src="assets/img/ozon.svg" alt="">
                     </a>
-                    <a href="">
+                    <a id="modal__yandex" href="">
                         <img src="assets/img/yandexmarket.svg" alt="">
                     </a>
                 </div>
@@ -83,11 +83,11 @@
                     Контакты
                 </h2>
                 <div class="footer__contacts-items flex-column gap-5">
-                    <a href="" class="footer__contacts-item gap-10 d-f al-center">
+                    <a href="https://wa.me/79629231232" class="footer__contacts-item gap-10 d-f al-center">
                         <img src="assets/img/whatsapp.svg" alt="">
                         <p>+7 (962) 923-12-32</p>
                     </a>
-                    <a href="" class="footer__contacts-item gap-10 d-f al-center">
+                    <a href="mailto:sale@mybrilliantsmile.ru" class="footer__contacts-item gap-10 d-f al-center">
                         <img src="assets/img/email.svg" alt="">
                         <p>sale@mybrilliantsmile.ru</p>
                     </a>
@@ -134,6 +134,7 @@
     function handleModal() {
         modal.classList.toggle('modal-opened')
     }
+
     modal.onclick = () => {
         handleModal()
     }
@@ -142,25 +143,306 @@
     }
     const items = [
         {
-            img: "",
-            description: "sas"
+            img: "https://basket-03.wb.ru/vol323/part32316/32316669/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Отбеливание зубов 3D white до 12 тонов"
         },
         {
-            img: "",
-            description: "sas2"
+            img: "https://basket-05.wb.ru/vol854/part85421/85421862/images/c516x688/2.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Скалер ультразвуковой портативный"
         },
         {
-            img: "",
-            description: "sas3"
+            img: "https://basket-09.wb.ru/vol1287/part128701/128701423/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Отбеливание зубов, отбеливающие полоски 7шт, карандаши 3шт"
         },
         {
-            img: "",
-            description: "sas4"
+            img: "https://basket-05.wb.ru/vol780/part78019/78019728/images/c516x688/3.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Капа стоматологическая от бруксизма с футляром, для зубов для сна двухчелюстная, от храпа, ночная, набор 2 шт"
         },
         {
-            img: "",
-            description: "sas5"
-        }
+            img: "https://basket-03.wb.ru/vol288/part28852/28852367/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Портативный ирригатор для чистки зубов"
+        },
+        {
+            img: "https://basket-04.wb.ru/vol538/part53887/53887101/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Карандаш для отбеливания зубов Black & White 2 или 3 шт. из набора MY BRILIANT SMILE, 4 мл."
+        },
+        {
+            img: "https://basket-01.wb.ru/vol134/part13406/13406562/images/c516x688/1.webp",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Набор скайсов Swarovski 240 процедур"
+        },
+        {
+            img: "https://basket-04.wb.ru/vol702/part70211/70211331/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Капа от бруксизма 2 шт с футляром"
+        },
+        {
+            img: "https://basket-01.wb.ru/vol80/part8028/8028201/images/c516x688/1.webp",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Набор отбеливания зубов ISMILE/3 карандаша и 1 капа"
+        },
+        {
+            img: "https://basket-03.wb.ru/vol357/part35764/35764457/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Дарсонваль аппарат для волос и для лица"
+        },
+        {
+            img: "https://basket-04.wb.ru/vol702/part70211/70211478/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Термопластичная капа 2 шт. в контейнере"
+        },
+        {
+            img: "https://basket-02.wb.ru/vol160/part16027/16027725/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Укрепляющий карандаш для реминирализации зубной эмали и снятия повышенной чувствительности зубов"
+        },
+        {
+            img: "https://basket-01.wb.ru/vol143/part14398/14398756/images/c516x688/1.webp",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Карандаш для отбеливания зубов Black & White 2 или 3 шт. из набора MY BRILIANT SMILE, 4 мл."
+        },
+        {
+            img: "https://basket-08.wb.ru/vol1157/part115728/115728987/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Подарочный набор макияжа сериала Эйфория"
+        },
+        {
+            img: "https://basket-04.wb.ru/vol580/part58049/58049647/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Ретрактор стоматологический 12шт-М/8шт-S"
+        },
+        {
+            img: "https://basket-01.wb.ru/vol97/part9747/9747444/images/c516x688/1.webp",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Зубной порошок для отбеливания зубов"
+        },
+        {
+            img: "https://basket-02.wb.ru/vol173/part17391/17391226/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Отбеливающие полоски для зубов 28 шт"
+        },
+        {
+            img: "https://basket-04.wb.ru/vol580/part58049/58049646/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Ретрактор стоматологический 12шт-М/8шт-S"
+        },
+        {
+            img: "https://basket-01.wb.ru/vol92/part9277/9277460/images/c516x688/1.webp",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Отбеливающий карандаш для зубов/Отбеливатель"
+        },
+        {
+            img: "https://basket-05.wb.ru/vol780/part78020/78020848/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Набор из 2 или 3 стальных скребков для языка/скребок для чистки 2 шт./3 шт / скребок для языка"
+        },
+        {
+            img: "https://basket-03.wb.ru/vol368/part36873/36873637/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Зубной порошок для отбеливания зубов"
+        },
+        {
+            img: "https://basket-02.wb.ru/vol150/part15081/15081165/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Набор из 2 или 3 стальных скребков для языка/скребок для чистки 2 шт./3 шт / скребок для языка"
+        },
+        {
+            img: "https://basket-01.wb.ru/vol89/part8956/8956849/images/c516x688/1.webp",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Набор бамбуковых зубных щеток 4шт."
+        },
+        {
+            img: "https://basket-04.wb.ru/vol618/part61813/61813992/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Скайсы на зубы 60 шт. или 120 шт."
+        },
+        {
+            img: "https://basket-10.wb.ru/vol1360/part136010/136010705/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Межзубный ершик"
+        },
+        {
+            img: "https://basket-10.wb.ru/vol1360/part136010/136010807/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Межзубный ершик"
+        },
+        {
+            img: "https://basket-10.wb.ru/vol1360/part136010/136010849/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Межзубные ершики для зубов брекетов 40 шт., L- 1.0mm"
+        },
+        {
+            img: "https://basket-10.wb.ru/vol1360/part136010/136010829/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Межзубные ершики для зубов брекетов 40 шт. M-0,8 мм"
+        },
+        {
+            img: "https://basket-10.wb.ru/vol1360/part136020/136020021/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Флоссеры - 150 шт, зубная нить с зубочисткой"
+        },
+        {
+            img: "https://basket-04.wb.ru/vol618/part61813/61813991/images/c516x688/1.jpg",
+            product_links: {
+                wildberries: "",
+                ozon: "",
+                yamarket: "",
+                sber: ""
+            },
+            description: "Скайсы на зубы 60 шт. или 120 шт."
+        },
+
     ]
 
     function renderItems() {
@@ -182,22 +464,30 @@
             productRows.innerHTML += `<div id=${`p_${index + 1}`} class="products__row d-f"></div>`
             const createdRow = document.getElementById(`${`p_${index + 1}`}`)
             item.forEach(val => {
-                createdRow.innerHTML += `<div class="products__row-item"><div class="products__item jс-between flex-column"><div class="products__item-block"><img src="assets/img/image_item.jpg" alt="" class="products__item-img"><div class="products__item-description"> Портативный ирригатор для полости рта My Brilliant Smile MBS 03 / ирригатор для полости рта</div></div><button class="products__item-btn btn">Заказать</button></div></div>`
+                createdRow.innerHTML += `<div class="products__row-item"><div class="products__item jс-between flex-column"><div class="products__item-block"><img src="${val.img}" alt="" class="products__item-img"><div class="products__item-description">${val.description}</div></div><button class="products__item-btn btn">Заказать</button></div></div>`
             })
         })
     }
-    function loadItems () {
+    function checkLoadBigger() {
+        if (items.length <= __lengthItemsNow) {
+            loadBtn.classList.add('d-n')
+        }
+    }
+    function loadItems() {
         const allRendered = items.length === __lengthItemsNow
-        if(!allRendered) {
-            if(items.length - __lengthItemsNow < __stepItemsLoad) {
+        if (!allRendered) {
+            if (items.length - __lengthItemsNow < __stepItemsLoad) {
                 __lengthItemsNow += items.length - __lengthItemsNow
             }
             __lengthItemsNow += __stepItemsLoad
+            checkLoadBigger()
+
         }
         renderItems()
     }
 
     loadBtn.onclick = loadItems
+    checkLoadBigger()
     renderItems()
 </script>
 </html>
