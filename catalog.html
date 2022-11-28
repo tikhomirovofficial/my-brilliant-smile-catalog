@@ -22,19 +22,19 @@
             <h1 class="modal__title">Заказать на</h1>
             <div class="modal__markets w-100p flex-row-betw">
                 <div class="modal__markets-column flex-column">
-                    <a id="modal__wildberries" href="">
+                    <a id="modal__wildberries" href="https://www.wildberries.ru/brands/my-brilliant-smile" target="_blank">
                         <img src="assets/img/wildberries.svg" alt="">
                     </a>
 
-                    <a id="modal__sber" href="">
+                    <a id="modal__sber" href="https://sbermegamarket.ru/catalog/?q=mybrilliantsmile" target="_blank">
                         <img src="assets/img/sbermarket.svg" alt="">
                     </a>
                 </div>
                 <div class="modal__markets-column flex-column">
-                    <a id="modal__ozon" href="">
+                    <a id="modal__ozon" href="https://www.ozon.ru/brand/my-brilliant-smile-72642543/" target="_blank">
                         <img src="assets/img/ozon.svg" alt="">
                     </a>
-                    <a id="modal__yandex" href="">
+                    <a id="modal__yandex" href="https://market.yandex.ru/business--brilliant-smail/914434" target="_blank">
                         <img src="assets/img/yandexmarket.svg" alt="">
                     </a>
                 </div>
@@ -46,7 +46,10 @@
 <section id="main" class="main">
     <div class="wrapper">
         <div class="main__block">
-            <img src="assets/img/logo.png" alt="logo" class="main__logo">
+            <a href="https://www.mybrilliantsmile.ru/">
+                <img src="assets/img/logo.png" alt="logo" class="main__logo">
+            </a>
+
             <div class="main__text">
                 <h1 class="main__text-brand">
                     My Brilliant Smile — это бренд <span>натуральных продуктов</span> для отбеливания зубов и уходу за
@@ -70,7 +73,7 @@
         <div class="products__block">
             <div id="products__rows" class="products__rows flex-column"></div>
         </div>
-        <div id="load" class="products__btn btn txt-center">
+        <div id="load" class="cur-pointer products__btn btn txt-center">
             Загрузить еще
         </div>
     </div>
@@ -94,25 +97,28 @@
                 </div>
 
             </div>
-            <img src="assets/img/white_logo.png" alt="" class="footer__logo">
+            <a style="width: fit-content" href="https://www.mybrilliantsmile.ru/">
+                <img src="assets/img/white_logo.png" alt="" class="footer__logo">
+            </a>
+
             <div class="footer__markets">
                 <h2 class="footer__subtitle">
                     Заказать товары на:
                 </h2>
                 <div class="footer__markets-block d-f gap-20">
                     <div class="footer__markets-column flex-column gap-15">
-                        <a href="">
+                        <a href="https://www.ozon.ru/brand/my-brilliant-smile-72642543/" target="_blank">
                             <img src="assets/img/ozon.svg" alt="">
                         </a>
-                        <a href="">
+                        <a href="https://market.yandex.ru/business--brilliant-smail/914434" target="_blank">
                             <img src="assets/img/yandexmarket.svg" alt="">
                         </a>
                     </div>
                     <div class="footer__markets-column flex-column gap-15">
-                        <a href="">
+                        <a href="https://www.wildberries.ru/brands/my-brilliant-smile" target="_blank">
                             <img src="assets/img/wildberries.svg" alt="">
                         </a>
-                        <a href="">
+                        <a href="https://sbermegamarket.ru/catalog/?q=mybrilliantsmile" target="_blank">
                             <img src="assets/img/sbermarket.svg" alt="">
                         </a>
                     </div>
@@ -464,7 +470,7 @@
             productRows.innerHTML += `<div id=${`p_${index + 1}`} class="products__row d-f"></div>`
             const createdRow = document.getElementById(`${`p_${index + 1}`}`)
             item.forEach(val => {
-                createdRow.innerHTML += `<div class="products__row-item"><div class="products__item jс-between flex-column"><div class="products__item-block"><img src="${val.img}" alt="" class="products__item-img"><div class="products__item-description">${val.description}</div></div><button class="products__item-btn btn">Заказать</button></div></div>`
+                createdRow.innerHTML += `<div class="products__row-item"><div class="products__item jс-between flex-column"><div class="products__item-block"><img src="${val.img}" alt="" class="products__item-img"><div class="products__item-description">${val.description}</div></div><button onclick="handleModal()" class="products__item-btn btn">Заказать</button></div></div>`
             })
         })
     }
