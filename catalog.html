@@ -470,7 +470,7 @@
             productRows.innerHTML += `<div id=${`p_${index + 1}`} class="products__row d-f"></div>`
             const createdRow = document.getElementById(`${`p_${index + 1}`}`)
             item.forEach(val => {
-                createdRow.innerHTML += `<div class="products__row-item"><div class="products__item jс-between flex-column"><div class="products__item-block"><img src="${val.img}" alt="" class="products__item-img"><div class="products__item-description">${val.description}</div></div><button onclick="handleModal()" class="products__item-btn btn">Заказать</button></div></div>`
+                createdRow.innerHTML += `<div class="products__row-item"><div onclick="handleModal()" class="products__item jс-between flex-column"><div class="products__item-block"><img src="${val.img}" alt="" class="products__item-img"><div class="products__item-description">${val.description}</div></div><button class="products__item-btn btn">Заказать</button></div></div>`
             })
         })
     }
